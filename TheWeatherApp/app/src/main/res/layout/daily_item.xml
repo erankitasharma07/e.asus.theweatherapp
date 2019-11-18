@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@android:color/black"
+            android:orientation="horizontal">
+
+
+            <ImageView
+
+                android:layout_weight="1"
+                android:id="@+id/image_weather_icon_daily"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:src="@drawable/ic_cloud_black_24dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/text_weather_temp_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:fontFamily="@font/cairo"
+                android:text="temp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
